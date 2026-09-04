@@ -8,17 +8,27 @@ const path = require('path');
 const PORT = Number(process.env.PORT || 8787);
 // Defaults hardcoded: Coolify turns app envs into build-time ARGs only, so
 // runtime may not see them. Env vars still win when present.
-const ORIGIN = process.env.GATEWAY_PUBLIC_ORIGIN || 'https://ke7t54ndaql8yuidannsxxae.72.61.148.211.sslip.io';
+const ORIGIN = process.env.GATEWAY_PUBLIC_ORIGIN || '';
 // Legacy Farfetch reference gateway (store-b-v2 shadow). Proxied read-only so
 // the nightly crawler imports keep flowing into the public Archive untouched.
 const UPSTREAM = process.env.LEGACY_GATEWAY_ORIGIN || 'https://5yzedsdnsbgudiy3q1ogu6bh.72.61.148.211.sslip.io';
 const catalog = JSON.parse(fs.readFileSync(path.join(__dirname, 'catalog.json'), 'utf8'));
 // Serve-time origin rewrite: catalog is built once with a placeholder host.
+// Each response rewrites to the ORIGIN the client actually used (Host header),
+// so the gateway works behind any domain/proxy without hardcoded envs.
 const PLACEHOLDER = 'https://REPLACE.sslip.io';
-if (ORIGIN && ORIGIN !== PLACEHOLDER) {
-  catalog.items = JSON.parse(JSON.stringify(catalog.items).split(PLACEHOLDER).join(ORIGIN));
-}
 const local = catalog.items;
+
+function rewriteOrigin(items, origin) {
+  if (!origin) return items;
+  return JSON.parse(JSON.stringify(items).split(PLACEHOLDER).join(origin));
+}
+function requestOrigin(req) {
+  if (ORIGIN) return ORIGIN;
+  const proto = req.headers['x-forwarded-proto'] || 'https';
+  const host = req.headers['x-forwarded-host'] || req.headers.host;
+  return host ? `${proto}://${host}` : '';
+}
 
 const SORTS = ['NEWEST', 'PRICE_LOW', 'PRICE_HIGH', 'BRAND_AZ'];
 const CACHE_MS = 300_000;
@@ -125,11 +135,12 @@ const server = http.createServer(async (req, res) => {
     }
 
     if (url.pathname === '/api/v1/mobile/archive' && req.method === 'GET') {
+      const origin = requestOrigin(req);
       const q = Object.fromEntries(url.searchParams);
       const page = Math.max(1, Number(q.page || 1) || 1);
       const limit = Math.min(100, Math.max(1, Number(q.limit || 20) || 20));
       const sort = SORTS.includes(q.sort) ? q.sort : 'NEWEST';
-      const [up, all] = [await upstreamItems(), local];
+      const [up, all] = [await upstreamItems(), rewriteOrigin(local, origin)];
       const merged = [...all, ...up].filter((i) => matches(i, q));
       const sorted = sortItems(merged, sort);
       const total = sorted.length;
