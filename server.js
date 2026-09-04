@@ -11,6 +11,11 @@ const ORIGIN = process.env.GATEWAY_PUBLIC_ORIGIN || '';
 // the nightly crawler imports keep flowing into the public Archive untouched.
 const UPSTREAM = process.env.LEGACY_GATEWAY_ORIGIN || '';
 const catalog = JSON.parse(fs.readFileSync(path.join(__dirname, 'catalog.json'), 'utf8'));
+// Serve-time origin rewrite: catalog is built once with a placeholder host.
+const PLACEHOLDER = 'https://REPLACE.sslip.io';
+if (ORIGIN && ORIGIN !== PLACEHOLDER) {
+  catalog.items = JSON.parse(JSON.stringify(catalog.items).split(PLACEHOLDER).join(ORIGIN));
+}
 const local = catalog.items;
 
 const SORTS = ['NEWEST', 'PRICE_LOW', 'PRICE_HIGH', 'BRAND_AZ'];
