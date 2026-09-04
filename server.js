@@ -1,1 +1,185 @@
-Ly8gTUFOSkFNIEFyY2hpdmUgZ2F0ZXdheSDigJQgc2VsZi1ob3N0ZWQgcmVmZXJlbmNlIGNhdGFsb2d1ZSAoQVJNIENocm9tZSBIZWFydHMpLgovLyBTZXJ2ZXMgdGhlIHN0cmljdCBjb250cmFjdCB2YWxpZGF0ZWQgYnkga2l0Y2hlbiBhcmNoaXZlLWNhdGFsb2cgbW9kdWxlLgpjb25zdCBodHRwID0gcmVxdWlyZSgnaHR0cCcpOwpjb25zdCBmcyA9IHJlcXVpcmUoJ2ZzJyk7CmNvbnN0IHBhdGggPSByZXF1aXJlKCdwYXRoJyk7Cgpjb25zdCBQT1JUID0gTnVtYmVyKHByb2Nlc3MuZW52LlBPUlQgfHwgODc4Nyk7CmNvbnN0IE9SSUdJTiA9IHByb2Nlc3MuZW52LkdBVEVXQVlfUFVCTElDX09SSUdJTiB8fCAnJzsKY29uc3QgY2F0YWxvZyA9IEpTT04ucGFyc2UoZnMucmVhZEZpbGVTeW5jKHBhdGguam9pbihfX2Rpcm5hbWUsICdjYXRhbG9nLmpzb24nKSwgJ3V0ZjgnKSk7CmNvbnN0IGl0ZW1zID0gY2F0YWxvZy5pdGVtczsKCmNvbnN0IFNPUlRTID0gWydORVdFU1QnLCAnUFJJQ0VfTE9XJywgJ1BSSUNFX0hJR0gnLCAnQlJBTkRfQVonXTsKCmZ1bmN0aW9uIGJyYW5kS2V5KHYpIHsKICByZXR1cm4gU3RyaW5nKHYgfHwgJycpLnRyaW0oKS5ub3JtYWxpemUoJ05GS0QnKQogICAgLnJlcGxhY2UoL1tcdTAzMDAtXHUwMzZmXS9nLCAnJykudG9Mb3dlckNhc2UoKQogICAgLnJlcGxhY2UoLyYvZywgJyBhbmQgJykKICAgIC5yZXBsYWNlKC9bXmEtejAtOV0rL2csICctJykucmVwbGFjZSgvXi0rfC0rJC9nLCAnJyk7Cn0KCmZ1bmN0aW9uIGZpbHRlcmVkKHEpIHsKICBsZXQgb3V0ID0gaXRlbXMuc2xpY2UoKTsKICBpZiAocS5jYXRlZ29yeSkgb3V0ID0gb3V0LmZpbHRlcigoaSkgPT4gaS5jYXRlZ29yeSA9PT0gcS5jYXRlZ29yeSk7CiAgaWYgKHEuY29uZGl0aW9uKSBvdXQgPSBvdXQuZmlsdGVyKChpKSA9PiBpLmNvbmRpdGlvbiA9PT0gcS5jb25kaXRpb24pOwogIGlmIChxLmJyYW5kKSB7CiAgICBjb25zdCBrZXkgPSBicmFuZEtleShxLmJyYW5kKTsKICAgIG91dCA9IG91dC5maWx0ZXIoKGkpID0+IGkuY2Fub25pY2FsQnJhbmRLZXkgPT09IGtleSB8fCBpLmNhbm9uaWNhbEJyYW5kID09PSBxLmJyYW5kKTsKICB9CiAgY29uc3QgZnRzID0gU3RyaW5nKHEuZnVsbFRleHRTZWFyY2ggfHwgJycpLnRyaW0oKS50b0xvd2VyQ2FzZSgpOwogIGlmIChmdHMpIHsKICAgIG91dCA9IG91dC5maWx0ZXIoCiAgICAgIChpKSA9PgogICAgICAgIGkudGl0bGUudG9Mb3dlckNhc2UoKS5pbmNsdWRlcyhmdHMpIHx8CiAgICAgICAgaS5jYW5vbmljYWxCcmFuZC50b0xvd2VyQ2FzZSgpLmluY2x1ZGVzKGZ0cykgfHwKICAgICAgICBpLnNvdXJjZVByb2R1Y3RJZCA9PT0gZnRzLAogICAgKTsKICB9CiAgY29uc3Qgc29ydCA9IFNPUlRTLmluY2x1ZGVzKHEuc29ydCkgPyBxLnNvcnQgOiAnTkVXRVNUJzsKICBpZiAoc29ydCA9PT0gJ1BSSUNFX0xPVycpIG91dC5zb3J0KChhLCBiKSA9PiBhLnVzZFByaWNlIC0gYi51c2RQcmljZSk7CiAgZWxzZSBpZiAoc29ydCA9PT0gJ1BSSUNFX0hJR0gnKSBvdXQuc29ydCgoYSwgYikgPT4gYi51c2RQcmljZSAtIGEudXNkUHJpY2UpOwogIGVsc2UgaWYgKHNvcnQgPT09ICdCUkFORF9BWicpIG91dC5zb3J0KChhLCBiKSA9PiBhLmNhbm9uaWNhbEJyYW5kS2V5LmxvY2FsZUNvbXBhcmUoYi5jYW5vbmljYWxCcmFuZEtleSkpOwogIGVsc2Ugb3V0LnNvcnQoKGEsIGIpID0+IGIub2JzZXJ2ZWRBdCAtIGEub2JzZXJ2ZWRBdCk7CiAgcmV0dXJuIG91dDsKfQoKY29uc3Qgc2VydmVyID0gaHR0cC5jcmVhdGVTZXJ2ZXIoKHJlcSwgcmVzKSA9PiB7CiAgY29uc3QgdXJsID0gbmV3IFVSTChyZXEudXJsLCBPUklHSU4gfHwgJ2h0dHA6Ly8xMjcuMC4wLjEnKTsKICBjb25zdCBzZW5kID0gKGNvZGUsIGJvZHksIHR5cGUpID0+IHsKICAgIHJlcy53cml0ZUhlYWQoY29kZSwgeyAnQ29udGVudC1UeXBlJzogdHlwZSB8fCAnYXBwbGljYXRpb24vanNvbicgfSk7CiAgICByZXMuZW5kKGJvZHkpOwogIH07CiAgaWYgKHVybC5wYXRobmFtZSA9PT0gJy9oZWFsdGh6JykgcmV0dXJuIHNlbmQoMjAwLCBKU09OLnN0cmluZ2lmeSh7IG9rOiB0cnVlIH0pKTsKCiAgaWYgKHVybC5wYXRobmFtZSA9PT0gJy9hcGkvdjEvbW9iaWxlL2FyY2hpdmUnICYmIHJlcS5tZXRob2QgPT09ICdHRVQnKSB7CiAgICBjb25zdCBwYWdlID0gTWF0aC5tYXgoMSwgTnVtYmVyKHVybC5zZWFyY2hQYXJhbXMuZ2V0KCdwYWdlJykgfHwgMSkgfHwgMSk7CiAgICBjb25zdCBsaW1pdCA9IE1hdGgubWluKDEwMCwgTWF0aC5tYXgoMSwgTnVtYmVyKHVybC5zZWFyY2hQYXJhbXMuZ2V0KCdsaW1pdCcpIHx8IDIwKSB8fCAyMCkpOwogICAgY29uc3QgYWxsID0gZmlsdGVyZWQoT2JqZWN0LmZyb21FbnRyaWVzKHVybC5zZWFyY2hQYXJhbXMpKTsKICAgIGNvbnN0IHRvdGFsID0gYWxsLmxlbmd0aDsKICAgIGNvbnN0IGRhdGEgPSBhbGwuc2xpY2UoKHBhZ2UgLSAxKSAqIGxpbWl0LCBwYWdlICogbGltaXQpOwogICAgcmV0dXJuIHNlbmQoMjAwLCBKU09OLnN0cmluZ2lmeSh7IHBhZ2VzOiBNYXRoLmNlaWwodG90YWwgLyBsaW1pdCksIHRvdGFsLCBwYWdlLCBsaW1pdCwgZGF0YSB9KSk7CiAgfQoKICBjb25zdCBkZXRhaWwgPSB1cmwucGF0aG5hbWUubWF0Y2goL15cL2FwaVwvdjFcL21vYmlsZVwvYXJjaGl2ZVwvKGFyX1thLWYwLTldezI0fSkkLyk7CiAgaWYgKGRldGFpbCAmJiByZXEubWV0aG9kID09PSAnR0VUJykgewogICAgY29uc3QgaXRlbSA9IGl0ZW1zLmZpbmQoKGkpID0+IGkuYXJjaGl2ZUl0ZW1JZCA9PT0gZGV0YWlsWzFdKTsKICAgIGlmICghaXRlbSkgcmV0dXJuIHNlbmQoNDA0LCBKU09OLnN0cmluZ2lmeSh7IGVycm9yOiAnbm90IGZvdW5kJyB9KSk7CiAgICByZXR1cm4gc2VuZCgyMDAsIEpTT04uc3RyaW5naWZ5KGl0ZW0pKTsKICB9CgogIGNvbnN0IGFzc2V0ID0gdXJsLnBhdGhuYW1lLm1hdGNoKC9eXC9hcmNoaXZlLWFzc2V0c1wvKFthLWYwLTldezY0fSlcLnBuZyQvKTsKICBpZiAoYXNzZXQgJiYgcmVxLm1ldGhvZCA9PT0gJ0dFVCcpIHsKICAgIGNvbnN0IGZpbGUgPSBwYXRoLmpvaW4oX19kaXJuYW1lLCAnYXNzZXRzJywgYXNzZXRbMV0gKyAnLnBuZycpOwogICAgaWYgKCFmcy5leGlzdHNTeW5jKGZpbGUpKSByZXR1cm4gc2VuZCg0MDQsICdub3QgZm91bmQnLCAndGV4dC9wbGFpbicpOwogICAgY29uc3QgYnVmID0gZnMucmVhZEZpbGVTeW5jKGZpbGUpOwogICAgcmVzLndyaXRlSGVhZCgyMDAsIHsKICAgICAgJ0NvbnRlbnQtVHlwZSc6ICdpbWFnZS9wbmcnLAogICAgICAnQ29udGVudC1MZW5ndGgnOiBidWYubGVuZ3RoLAogICAgICAnQ2FjaGUtQ29udHJvbCc6ICdwdWJsaWMsIG1heC1hZ2U9MzE1MzYwMDAsIGltbXV0YWJsZScsCiAgICAgIEVUYWc6ICciJyArIGFzc2V0WzFdICsgJyInLAogICAgfSk7CiAgICByZXR1cm4gcmVzLmVuZChidWYpOwogIH0KCiAgY29uc3QgaXRlbSA9IHVybC5wYXRobmFtZS5tYXRjaCgvXlwvaXRlbVwvKGFyX1thLWYwLTldezI0fSkkLyk7CiAgaWYgKGl0ZW0gJiYgcmVxLm1ldGhvZCA9PT0gJ0dFVCcpIHsKICAgIGNvbnN0IGl0ID0gaXRlbXMuZmluZCgoaSkgPT4gaS5hcmNoaXZlSXRlbUlkID09PSBpdGVtWzFdKTsKICAgIGlmICghaXQpIHJldHVybiBzZW5kKDQwNCwgJ25vdCBmb3VuZCcsICd0ZXh0L3BsYWluJyk7CiAgICByZXR1cm4gc2VuZCgKICAgICAgMjAwLAogICAgICBgPCFkb2N0eXBlIGh0bWw+PG1ldGEgY2hhcnNldD11dGYtOD48bWV0YSBuYW1lPXJvYm90cyBjb250ZW50PW5vaW5kZXg+PHRpdGxlPiR7aXQudGl0bGV9PC90aXRsZT48aDE+JHtpdC50aXRsZX08L2gxPjxwPiR7aXQuY2Fub25pY2FsQnJhbmR9IOKAlCAkJHtpdC51c2RQcmljZX0gKCR7aXQub3JpZ2luYWxDdXJyZW5jeX0gJHtpdC5vcmlnaW5hbFByaWNlfSk8L3A+PHA+U2l6ZTogJHtpdC5zaXplfSB8ICR7aXQuY29uZGl0aW9ufSB8ICR7aXQuY2F0ZWdvcnl9PC9wPjxpbWcgc3JjPSR7SlNPTi5zdHJpbmdpZnkoaXQuaW1hZ2VVcmxzWzBdKX0gd2lkdGg9NDgwPmAsCiAgICAgICd0ZXh0L2h0bWwnLAogICAgKTsKICB9CgogIHNlbmQoNDA0LCBKU09OLnN0cmluZ2lmeSh7IGVycm9yOiAnbm90IGZvdW5kJyB9KSk7Cn0pOwoKc2VydmVyLmxpc3RlbihQT1JULCAoKSA9PiBjb25zb2xlLmxvZyhgYXJjaGl2ZS1nYXRld2F5IGxpc3RlbmluZyBvbiAke1BPUlR9LCBpdGVtcz0ke2l0ZW1zLmxlbmd0aH1gKSk7Cg==
+// MANJAM Archive gateway (aggregator): SELF catalog local + FARFETCH proxied live.
+// Serves the strict contract validated by the kitchen archive-catalog module.
+const http = require('http');
+const https = require('https');
+const fs = require('fs');
+const path = require('path');
+
+const PORT = Number(process.env.PORT || 8787);
+const ORIGIN = process.env.GATEWAY_PUBLIC_ORIGIN || '';
+// Legacy Farfetch reference gateway (store-b-v2 shadow). Proxied read-only so
+// the nightly crawler imports keep flowing into the public Archive untouched.
+const UPSTREAM = process.env.LEGACY_GATEWAY_ORIGIN || '';
+const catalog = JSON.parse(fs.readFileSync(path.join(__dirname, 'catalog.json'), 'utf8'));
+const local = catalog.items;
+
+const SORTS = ['NEWEST', 'PRICE_LOW', 'PRICE_HIGH', 'BRAND_AZ'];
+const CACHE_MS = 300_000;
+let upstreamCache = { at: 0, items: [], promise: null };
+
+function getJson(url) {
+  return new Promise((resolve, reject) => {
+    const lib = url.startsWith('https') ? https : http;
+    const req = lib.get(url, { timeout: 15000, rejectUnauthorized: false }, (res) => {
+      let body = '';
+      res.on('data', (c) => (body += c));
+      res.on('end', () => {
+        if (res.statusCode !== 200) return reject(new Error('upstream ' + res.statusCode));
+        try { resolve(JSON.parse(body)); } catch (e) { reject(e); }
+      });
+    });
+    req.on('error', reject);
+    req.on('timeout', () => { req.destroy(new Error('upstream timeout')); });
+  });
+}
+
+async function upstreamItems() {
+  if (!UPSTREAM) return [];
+  const fresh = Date.now() - upstreamCache.at < CACHE_MS;
+  if (fresh && upstreamCache.items.length) return upstreamCache.items;
+  if (upstreamCache.promise) return upstreamCache.promise;
+  upstreamCache.promise = (async () => {
+    const out = [];
+    let page = 1;
+    for (;;) {
+      const d = await getJson(`${UPSTREAM}/api/v1/mobile/archive?page=${page}&limit=100`);
+      out.push(...(d.data || []));
+      if (page >= (d.pages || 1)) break;
+      page += 1;
+      if (page > 40) break;
+    }
+    upstreamCache = { at: Date.now(), items: out, promise: null };
+    return out;
+  })().catch((e) => {
+    upstreamCache.promise = null;
+    console.error('upstream fetch failed:', String(e).slice(0, 120));
+    return upstreamCache.items; // stale-while-error: keep last good copy
+  });
+  return upstreamCache.promise;
+}
+
+function brandKey(v) {
+  return String(v || '').trim().normalize('NFKD')
+    .replace(/[\u0300-\u036f]/g, '').toLowerCase()
+    .replace(/&/g, ' and ')
+    .replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+}
+
+function matches(i, q) {
+  if (q.category && i.category !== q.category) return false;
+  if (q.condition && i.condition !== q.condition) return false;
+  if (q.brand) {
+    const key = brandKey(q.brand);
+    if (i.canonicalBrandKey !== key && i.canonicalBrand !== q.brand) return false;
+  }
+  const fts = String(q.fullTextSearch || '').trim().toLowerCase();
+  if (fts) {
+    const hit =
+      (i.title || '').toLowerCase().includes(fts) ||
+      (i.canonicalBrand || '').toLowerCase().includes(fts) ||
+      String(i.sourceProductId) === fts;
+    if (!hit) return false;
+  }
+  return true;
+}
+
+function sortItems(list, sort) {
+  const out = list.slice();
+  if (sort === 'PRICE_LOW') out.sort((a, b) => a.usdPrice - b.usdPrice);
+  else if (sort === 'PRICE_HIGH') out.sort((a, b) => b.usdPrice - a.usdPrice);
+  else if (sort === 'BRAND_AZ') out.sort((a, b) => String(a.canonicalBrandKey).localeCompare(String(b.canonicalBrandKey)));
+  else out.sort((a, b) => (b.observedAt || 0) - (a.observedAt || 0));
+  return out;
+}
+
+function fetchBuffer(url) {
+  return new Promise((resolve, reject) => {
+    const lib = url.startsWith('https') ? https : http;
+    const req = lib.get(url, { timeout: 20000, rejectUnauthorized: false }, (res) => {
+      if (res.statusCode !== 200) { res.resume(); return reject(new Error('upstream ' + res.statusCode)); }
+      const chunks = [];
+      res.on('data', (c) => chunks.push(c));
+      res.on('end', () => resolve({ buf: Buffer.concat(chunks), headers: res.headers }));
+    });
+    req.on('error', reject);
+    req.on('timeout', () => { req.destroy(new Error('timeout')); });
+  });
+}
+
+const server = http.createServer(async (req, res) => {
+  const url = new URL(req.url, ORIGIN || 'http://127.0.0.1');
+  const send = (code, body, type, extra) => {
+    res.writeHead(code, { 'Content-Type': type || 'application/json', ...(extra || {}) });
+    res.end(body);
+  };
+  try {
+    if (url.pathname === '/healthz') {
+      return send(200, JSON.stringify({ ok: true, local: local.length, upstream: upstreamCache.items.length }));
+    }
+
+    if (url.pathname === '/api/v1/mobile/archive' && req.method === 'GET') {
+      const q = Object.fromEntries(url.searchParams);
+      const page = Math.max(1, Number(q.page || 1) || 1);
+      const limit = Math.min(100, Math.max(1, Number(q.limit || 20) || 20));
+      const sort = SORTS.includes(q.sort) ? q.sort : 'NEWEST';
+      const [up, all] = [await upstreamItems(), local];
+      const merged = [...all, ...up].filter((i) => matches(i, q));
+      const sorted = sortItems(merged, sort);
+      const total = sorted.length;
+      const data = sorted.slice((page - 1) * limit, page * limit);
+      return send(200, JSON.stringify({ pages: Math.ceil(total / limit), total, page, limit, data }));
+    }
+
+    const detail = url.pathname.match(/^\/api\/v1\/mobile\/archive\/(ar_[a-f0-9]{24})$/);
+    if (detail && req.method === 'GET') {
+      const mine = local.find((i) => i.archiveItemId === detail[1]);
+      if (mine) return send(200, JSON.stringify(mine));
+      if (UPSTREAM) {
+        const data = await getJson(`${UPSTREAM}/api/v1/mobile/archive/${detail[1]}`);
+        return send(200, JSON.stringify(data));
+      }
+      return send(404, JSON.stringify({ error: 'not found' }));
+    }
+
+    const asset = url.pathname.match(/^\/archive-assets\/([a-f0-9]{64})\.png$/);
+    if (asset && req.method === 'GET') {
+      const file = path.join(__dirname, 'assets', asset[1] + '.png');
+      if (fs.existsSync(file)) {
+        const buf = fs.readFileSync(file);
+        res.writeHead(200, {
+          'Content-Type': 'image/png', 'Content-Length': buf.length,
+          'Cache-Control': 'public, max-age=31536000, immutable', ETag: '"' + asset[1] + '"',
+        });
+        return res.end(buf);
+      }
+      if (UPSTREAM) {
+        const { buf, headers } = await fetchBuffer(`${UPSTREAM}/archive-assets/${asset[1]}.png`);
+        res.writeHead(200, {
+          'Content-Type': headers['content-type'] || 'image/png',
+          'Content-Length': buf.length,
+          'Cache-Control': headers['cache-control'] || 'public, max-age=31536000, immutable',
+          ETag: headers.etag || '"' + asset[1] + '"',
+        });
+        return res.end(buf);
+      }
+      return send(404, 'not found', 'text/plain');
+    }
+
+    const item = url.pathname.match(/^\/item\/(ar_[a-f0-9]{24})$/);
+    if (item && req.method === 'GET') {
+      const it = local.find((i) => i.archiveItemId === item[1]);
+      if (!it) return send(404, 'not found', 'text/plain');
+      return send(
+        200,
+        `<!doctype html><meta charset=utf-8><meta name=robots content=noindex><title>${it.title}</title><h1>${it.title}</h1><p>${it.canonicalBrand} — $${it.usdPrice} (${it.originalCurrency} ${it.originalPrice})</p><p>Size: ${it.size} | ${it.condition} | ${it.category}</p><img src=${JSON.stringify(it.imageUrls[0])} width=480>`,
+        'text/html',
+      );
+    }
+
+    return send(404, JSON.stringify({ error: 'not found' }));
+  } catch (e) {
+    return send(502, JSON.stringify({ error: 'gateway upstream error' }));
+  }
+});
+
+server.listen(PORT, () => console.log(`archive-gateway listening on ${PORT}, local=${local.length}, upstream=${UPSTREAM || 'none'}`));
