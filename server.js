@@ -151,7 +151,7 @@ const server = http.createServer(async (req, res) => {
     const detail = url.pathname.match(/^\/api\/v1\/mobile\/archive\/(ar_[a-f0-9]{24})$/);
     if (detail && req.method === 'GET') {
       const mine = local.find((i) => i.archiveItemId === detail[1]);
-      if (mine) return send(200, JSON.stringify(mine));
+      if (mine) return send(200, JSON.stringify(rewriteOrigin([mine], origin)[0]));
       if (UPSTREAM) {
         const data = await getJson(`${UPSTREAM}/api/v1/mobile/archive/${detail[1]}`);
         return send(200, JSON.stringify(data));
