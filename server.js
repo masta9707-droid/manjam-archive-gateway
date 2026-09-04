@@ -8,7 +8,7 @@ const path = require('path');
 const PORT = Number(process.env.PORT || 8787);
 // Defaults hardcoded: Coolify turns app envs into build-time ARGs only, so
 // runtime may not see them. Env vars still win when present.
-const ORIGIN = process.env.GATEWAY_PUBLIC_ORIGIN || 'https://5jpvh4fmtu68m1xka4qvcmlr.72.61.148.211.sslip.io';
+const ORIGIN = process.env.GATEWAY_PUBLIC_ORIGIN || 'https://xbp8hj1avpmauk7ajwxi74hz.72.61.148.211.sslip.io';
 // Legacy Farfetch reference gateway (store-b-v2 shadow). Proxied read-only so
 // the nightly crawler imports keep flowing into the public Archive untouched.
 const UPSTREAM = process.env.LEGACY_GATEWAY_ORIGIN || 'https://5yzedsdnsbgudiy3q1ogu6bh.72.61.148.211.sslip.io';
