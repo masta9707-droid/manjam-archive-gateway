@@ -6,10 +6,12 @@ const fs = require('fs');
 const path = require('path');
 
 const PORT = Number(process.env.PORT || 8787);
-const ORIGIN = process.env.GATEWAY_PUBLIC_ORIGIN || '';
+// Defaults hardcoded: Coolify turns app envs into build-time ARGs only, so
+// runtime may not see them. Env vars still win when present.
+const ORIGIN = process.env.GATEWAY_PUBLIC_ORIGIN || 'https://sjwbc9t4zfdxb5a7pzf3epmq.72.61.148.211.sslip.io';
 // Legacy Farfetch reference gateway (store-b-v2 shadow). Proxied read-only so
 // the nightly crawler imports keep flowing into the public Archive untouched.
-const UPSTREAM = process.env.LEGACY_GATEWAY_ORIGIN || '';
+const UPSTREAM = process.env.LEGACY_GATEWAY_ORIGIN || 'https://5yzedsdnsbgudiy3q1ogu6bh.72.61.148.211.sslip.io';
 const catalog = JSON.parse(fs.readFileSync(path.join(__dirname, 'catalog.json'), 'utf8'));
 // Serve-time origin rewrite: catalog is built once with a placeholder host.
 const PLACEHOLDER = 'https://REPLACE.sslip.io';
