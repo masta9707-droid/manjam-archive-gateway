@@ -141,7 +141,12 @@ const server = http.createServer(async (req, res) => {
       const limit = Math.min(100, Math.max(1, Number(q.limit || 20) || 20));
       const sort = SORTS.includes(q.sort) ? q.sort : 'NEWEST';
       const [up, all] = [await upstreamItems(), rewriteOrigin(local, origin)];
-      const merged = [...all, ...up].filter((i) => matches(i, q));
+      // Demotion rule: if a SELF catalog item carries cutout art for the same
+      // upstream product id, the legacy original-photo row is hidden so the
+      // app never shows two versions (old uncut one under the cut one).
+      const localIds = new Set(local.map((i) => String(i.sourceProductId)));
+      const upDedup = up.filter((i) => !localIds.has(String(i.sourceProductId)));
+      const merged = [...all, ...upDedup].filter((i) => matches(i, q));
       const sorted = sortItems(merged, sort);
       const total = sorted.length;
       const data = sorted.slice((page - 1) * limit, page * limit);
